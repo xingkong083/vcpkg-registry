@@ -4,6 +4,10 @@
 			"baseline": "1.5.0", 
 			"port-version": 1
 		}
+		"paho-mqttcpp-x64": {
+			"baseline": "1.5.0", 
+			"port-version": 1
+		}
 	}
 	
 }
