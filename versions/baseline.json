@@ -1,0 +1,9 @@
+{
+	"cssw": {
+		"paho-mqttcpp": {
+			"baseline": "1.5.0", 
+			"port-version": 1
+		}
+	}
+	
+}
