@@ -23,7 +23,7 @@ vcpkg_cmake_configure(
     ${FEATURE_OPTIONS}
 )
 
-message(status "===>${PAHO_WITH_SSL}")
+message(status "===>${FEATURE_OPTIONS}")
 
 vcpkg_cmake_install()
 vcpkg_copy_pdbs()
