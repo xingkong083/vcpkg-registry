@@ -9,6 +9,12 @@ vcpkg_from_github(
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "static" PAHO_BUILD_STATIC)
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "dynamic" PAHO_BUILD_SHARED)
 
+set(PAHO_WITH_SSL OFF)
+
+vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
+  FEATURES
+    "ssl" PAHO_WITH_SSL
+)
 vcpkg_cmake_configure(
   SOURCE_PATH "${SOURCE_PATH}"
   OPTIONS
