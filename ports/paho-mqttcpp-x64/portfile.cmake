@@ -22,6 +22,9 @@ vcpkg_cmake_configure(
     -DPAHO_BUILD_SHARED=${PAHO_BUILD_SHARED}
     ${FEATURE_OPTIONS}
 )
+
+message(status "===>${PAHO_WITH_SSL}")
+
 vcpkg_cmake_install()
 vcpkg_copy_pdbs()
 vcpkg_cmake_config_fixup(PACKAGE_NAME pahomqttcpp CONFIG_PATH "lib/cmake/PahoMqttCpp")
